@@ -120,3 +120,17 @@ Moreover, Go is among the top three backend languages used in the [Apache Softwa
 In this [blog post](https://tonybai.com/2025/01/06/the-2024-review-of-go-programming-language/), Tony Bai claims that Go is now entering its period of **maturity and a golden age**.
 
 
+## Go and Rust
+
+Although there’s an opinion that the rise of Rust could exert some pressure on Go, that’s not true. In their joint article [Rust vs. Go: Why They’re Better Together](https://thenewstack.io/rust-vs-go-why-theyre-better-together/), the Go and the Rust teams argue: _“While others may see Rust and Go as competitive programming languages, neither the Rust nor the Go teams do. Quite the contrary, our teams have deep respect for what the others are doing, and see the languages as complimentary with a shared vision of modernizing the state of software development industry-wide.”_
+
+Go and Rust have a lot in common. Both are modern software languages designed with **performance** and **concurrency** in mind that natively support cross-compilation and come with **compiler safety guarantees**.
+
+However, their primary use cases differ. Go is best suited for cloud server applications, web services, microservices, APIs, and CLI development, while Rust is ideal for performance-intensive, low-level embedded applications. Also, financial platforms are considering Rust for High-Frequency Trading.
+
+Go has the advantage of being **easier to pick up** and more pleasant to work with, particularly for projects that need **rapid development and scalability**. On the other hand, Rust often appeals to **highly enthusiastic developers** and is favored for **certain performance-critical use cases**. As the article says, Rust is designed to enable you to squeeze every last drop of performance out of the code; however, Rust’s increased performance comes at the cost of additional complexity. Rust development is typically more **expensive and time-consuming**.
+
+As a result, many companies use both **Rust and Go** to complement one another, employing Rust only in those scenarios where its benefits justify the additional cost. While it’s true that many Go developers are interested in experimenting with Rust, this does not indicate a decline in Go’s market share.
+
+
+
