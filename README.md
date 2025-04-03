@@ -1,4 +1,4 @@
-# Go website
+_# Go website
 
 [![Go Reference](https://pkg.go.dev/badge/golang.org/x/website.svg)](https://pkg.go.dev/golang.org/x/website)
 
@@ -74,4 +74,4 @@ The git repository is https://go.googlesource.com/website.
 
 The main issue tracker for the website repository is located at
 https://go.dev/issues. Prefix your issue with "x/website:" in the
-subject line, so it is easy to find.
+subject line, so it is easy to find._
