@@ -2,7 +2,7 @@
 title: "Is Golang Still Growing? Go Language Popularity Trends in 2024"
 date: 2025-04-03
 by:
-- Elena Ufliand
+- Elena Ufliand (JetBrains)
 
 summary: Is Golang Still Growing?
 ---
@@ -13,7 +13,7 @@ How popular is Golang in 2024? Explore adoption trends, usage stats, and expert 
 
 ## The market for Go
 
-According to the Developer Ecosystem Data Playground, the mean estimate is that 4.1 million Go professionals used Go within the last 12 months, and 1.8 million used it as one of their primary programming languages. According to the SlashData report for Q1 2024, at the beginning of 2024, there were around 4.7 million Go developers worldwide. While these two estimates are close, JetBrains’ figure only includes professionals who earn money (full-time, part-time employed, or freelancers; job roles that include coding duties like Developer, QA, DBA, etc.), whileSlashData also counts STEM students and hobbyists.
+According to the Developer Ecosystem Data Playground, the mean estimate is that 4.1 million Go professionals used Go within the last 12 months, and 1.8 million used it as one of their primary programming languages. According to the SlashData report for Q1 2024, at the beginning of 2024, there were around 4.7 million Go developers worldwide. While these two estimates are close, JetBrains’ figure only includes professionals who earn money (full-time, part-time employed, or freelancers; job roles that include coding duties like Developer, QA, DBA, etc.), while SlashData also counts STEM students and hobbyists.
 And Go’s usage must have grown significantly since then. In his talk from August 2024, Go Language PM Cameron Balahan mentions the number 5.8 million, based on the proportion of respondents who reported using Go on Stack Overflow's latest annual survey and SlashData’s estimate of the number of developers worldwide.
 
 ## Go developers
@@ -133,4 +133,54 @@ Go has the advantage of being **easier to pick up** and more pleasant to work wi
 As a result, many companies use both **Rust and Go** to complement one another, employing Rust only in those scenarios where its benefits justify the additional cost. While it’s true that many Go developers are interested in experimenting with Rust, this does not indicate a decline in Go’s market share.
 
 
+## Future evolution of Go
 
+The main future directions for Go were outlined as follows in a [GopherCon Europe 2024 talk](https://www.youtube.com/watch?v=OaKcuq6ej1I) by Go Language PM Cameron Balahan:
+
+- Continued focus on the cloud
+
+
+The mainstream **cloud market** continues to grow, and the Go team recognizes the core values that cloud development demands: **time to value, reliability, and scalability**.
+
+After **Russ Cox**, who was the **technical lead of the Go project** since 2012 and who guided the Go language from an experimental project to one of today's most popular programming languages, [stepped down](https://groups.google.com/g/golang-dev/c/0OqBkS2RzWw/m/GzWvX5u6AQAJ?pli=1) in September, his role of the general tech lead was assumed by Austin Clements. Cherry Mui took over the “Go core”, which includes the compiler toolchain, runtime, and releases. The new technical leads aim to maintain Go's reputation for simplicity, stability, performance, and scalability, ensuring that Go remains a reliable platform for DevOps teams.
+
+Over the last years, the Go team has continued to enhance the **data-driven decision-making process** based on shared goals. In addition to gathering feedback through user surveys, data from the Go plugin for Visual Studio Code, and user experience research, they now collect more precise usage data via the opt-in **telemetry feature** introduced to the Go toolchain last year. This approach helps the team tackle the Go community growth challenges effectively while staying closely aligned with user needs.
+
+- **The emerging market of generative AI (GenAI):**
+
+
+As the GenAI market emerges, developers are increasingly choosing Go as a reliable tool for building scalable, production-grade components of AI-powered products, such as **model serving**. While Go is not traditionally associated with machine learning, its reputation for performance and scalability makes it a front-of-mind choice for production infrastructure in AI solutions.
+
+The topic of AI use cases for Go was added to the [Go Developer Survey 2024 H1 Results](https://go.dev/blog/survey2024-h1-results#mlai), reflecting rising interest in this area. One example is the experimental bot [Gaby](https://pkg.go.dev/rsc.io/gaby) (short for “Go AI Bot”), which runs in the Go issue tracker as [@gabyhelp](https://github.com/gabyhelp), making the team more efficient.
+
+Developers are publishing more articles, tutorials, and materials exploring how to apply Go to GenAI. For example, Ardan Labs released a [free course entitled Bill’s Guide to AI](https://www.youtube.com/playlist?list=PLADD_vxzPcZDzTmmub99S0Ne58ApvJZjJ), and a [new subreddit dedicated to using LLMs and AI with Go](https://www.reddit.com/r/LLMgophers/?rdt=53143) was created towards the end of last year.
+
+**Major AI platforms**, including OpenAI, Claude, and Google AI, **now support Go SDKs**.
+The **Go ecosystem for GenAI** is also **growing**, with the emergence of tools like Ollama, LocalAI, HuggingFace, Firebase GenKit, LangChain Go, kserve (a Go tool for serving models on Kubernetes), Weaviate, Milvus vector databases, and more. Moreover, we see that GenAI infrastructure itself is being written in Go, just as cloud infrastructure was.
+
+However, while Go excels at building infrastructure for AI systems, it currently lacks a **Go-native solution for machine learning (ML)**. For production modeling and ML-focused development, **Python** remains dominant due to its rich ecosystem of powerful libraries and frameworks, including scikit-learn, PyTorch, Keras, and TensorFlow.
+
+## Conclusion
+
+- In 2024, there was a change in the **leadership of the Go team**, but this is no cause for concern. The ideas and goals outlined by the new leaders reflect a deep understanding of the language and its culture, ensuring continuity in the Go development ecosystem.
+As expected, two major versions – [Go 1.22](https://tip.golang.org/doc/go1.22) and [Go 1.23](https://tip.golang.org/doc/go1.23) – were released in 2024, and [Go 1.24](https://tip.golang.org/doc/go1.24) – in February 2025. In November 2024, Go celebrated its fifteenth anniversary.
+
+- The Go team declared their interest in a new problem domain: **AI model serving**, an emerging area that offers exciting opportunities for Go's adoption.
+While it remains to be seen whether Go will manage to capture this market segment, the ecosystem is already evolving to address these opportunities.
+
+- Meanwhile, Go has managed to cement its position in the **mainstream cloud market**, which continues to grow – particularly with the increasing need to manage **cloud-native infrastructure in enterprise environments**.
+Although Go is now entering its period of **maturity and a golden age**, it must continue strengthening its position in the current market.
+
+## Sources
+
+- SLASHDATA LTD. Sizing programming language communities. Published: May 2024. Available at: https://dashboard-tool-report.cdn.prismic.io/dashboard-tool-report/ZmMmh5m069VX1jxc_-W.Kodluyoruz-Programminglanguagecommunities.pdf [quoted 2025-02-26]
+- MERRICK, Alice (go.dev). Go Developer Survey 2024 H2 Results. Published: 20 December 2024. Available at: https://go.dev/blog/survey2024-h2-results [quoted 2025-02-26]
+- GOOGLE INC. Documentation. Available at: https://go.dev/doc/ [quoted 2025-02-26]
+- STACK EXCHANGE INC. 2024 Developer Survey. Published: 2024. Available at: https://survey.stackoverflow.co/2024/  [quoted 2025-02-26]
+- CLOUDFLARE INC. The Cloudflare Radar 2024 Year in Review. Published: 2024. Available at: https://radar.cloudflare.com/year-in-review/2024 [quoted 2025-02-26]
+- JONATHAN TURNER AND STEVE FRANCIA. Rust vs. Go: Why They’re Better Together. Published: March 12, 2021. Available at: https://thenewstack.io/rust-vs-go-why-theyre-better-together/  [quoted 2025-03-31]
+- GITHUB INC. Octoverse 2024. Published: October 29, 2024. Available at: https://github.blog/news-insights/octoverse/octoverse-2024/#the-most-popular-programming-languages [quoted 2025-02-26]
+- BALAHAN, Cameron. The Business of Go. YouTube. 19 July 2024. Available at: https://www.youtube.com/watch?v=OaKcuq6ej1I [quoted 2025-02-26]
+- BALAHAN, Cameron. The Business of Go. YouTube. 18 August 2024. Available at: https://www.youtube.com/watch?v=pLvZRnK2WRE&t=1087s [quoted 2025-03-31]
+- COX, Russ. passing torches to Austin and Cherry. Google Group golang-dev. 1 August 2024. Available at: https://groups.google.com/g/golang-dev/c/0OqBkS2RzWw/m/GzWvX5u6AQAJ [quoted 2025-02-26]
+- JANSEN, Paul. TIOBE Index for February 2025. Published: February 2025. Available at: https://www.tiobe.com/tiobe-index [quoted 2025-02-28]
